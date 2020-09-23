@@ -1,0 +1,1 @@
+python -m PyInstaller -D --noupx -i ./icon/cloud_64px.ico -w app_run.py
