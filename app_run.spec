@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['app_run.py'],
-             pathex=['C:\\Users\\jiarui.luo.HIRAIN\\PycharmProjects\\parseCANframe'],
+             pathex=['C:\\Users\\jiarui.luo.HIRAIN\\Desktop\\parseCANframe'],
              binaries=[],
              datas=[],
              hiddenimports=[],

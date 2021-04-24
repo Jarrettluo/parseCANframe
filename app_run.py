@@ -178,14 +178,16 @@ class MyCal(QThread):
     def run(self):
         t0 = time.time()
         try:
-            func(self.CAN_file_name, self.CAN_DBC_file_name, self.save_path)
+            result = func(self.CAN_file_name, self.CAN_DBC_file_name, self.save_path)
             msg = 1
         except Exception:
             raise
+        if result is False:
             msg = 0
         t1 = time.time()
         total_time = round(t1-t0, 2)
         self.cal_signal.emit([msg, total_time])
+
 
 #编写一个公共类CommomHelper,用于帮助解读qss文件
 class CommonHelper:
